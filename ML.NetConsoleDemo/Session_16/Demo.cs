@@ -21,11 +21,11 @@ namespace ML.NetConsoleDemo.Session_16
 				new TextLoader.Column("Salary", DataKind.Single, 1),
 			};
 
-			var filePath = Path.Combine(AppContext.BaseDirectory,"Session_16", "salary_data_high_accuracy.tsv");
+			var filePath = Path.Combine(AppContext.BaseDirectory,"Session_16", "salary_data_high_accuracy.csv");
 
-			//IDataView dataView = context.Data.LoadFromTextFile<InputModel>(path: filePath, hasHeader:true, separatorChar: ',');
+			IDataView dataView = context.Data.LoadFromTextFile<InputModel>(path: filePath, hasHeader:true, separatorChar: ',');
 
-			IDataView dataView = context.Data.LoadFromTextFile<InputModel>(path: filePath, hasHeader: false);
+			//IDataView dataView = context.Data.LoadFromTextFile<InputModel>(path: filePath, hasHeader: false);
 
 
 			var preview = dataView.Preview();

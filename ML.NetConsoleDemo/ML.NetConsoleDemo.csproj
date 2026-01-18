@@ -30,4 +30,8 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Session_20\traning-dataset\" />
+  </ItemGroup>
+
 </Project>

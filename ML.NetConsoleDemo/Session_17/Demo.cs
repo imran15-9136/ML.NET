@@ -16,7 +16,7 @@ namespace ML.NetConsoleDemo.Session_17
 
 			var filePath = Path.Combine(AppContext.BaseDirectory, "Session_17", "traning-dataset","*");
 
-			IDataView dataView = context.Data.LoadFromTextFile<InputModel>(path: filePath, hasHeader: false);
+			IDataView dataView = context.Data.LoadFromTextFile<InputModel>(path: filePath, hasHeader: false, separatorChar: ',');
 
 			var preview = dataView.Preview();
 		}
